@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .image {
+    width: 229px;
+    height: 305px;
+    left: -18px;
+    top: 0px;
+    opacity: 1;
+    z-index: 2;
+    transform-origin: 50% 50% 0px;
+    border-top-left-radius: 16px ;
+    border-bottom-left-radius: 16px;
+}
+    .card{
+      width: 592px;
+      height: 305px;
+      border-radius: 16px;
+      
+    }
+    .container {
+      padding-top: 24px;
+      padding: 48px;
+
+    }
+
+    .padd{
+      padding-top: 24px;
+    }
+    .padds{
+      padding-top: 24px;
+      padding-left: 12px;
+    }
+
+    .price{
+      color: #a3afc0;
+      justify-content: right;
+    }
+
+    .gap {
+    gap: 8px;
+}
+.h8{
+  font-size: 12px;
+}
+  </style>
+  <body>
+    <div class="container bg-primary-subtle">
+      <div class="card">
+        <div class="row">
+          <div class="row row-cols-2">
+              <img
+                src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg"
+                class="image"
+              />
+            <div class="">
+              <div class="d-flex justify-content-between padd ">
+                <div class="">
+                  <h5>Classic Utility Jacket</h5>
+                </div>
+                <div class="price">
+                  <h5>$110.00</h5>
+                </div>
+              </div>
+              <div>In stock</div>
+              <div class="row g-3 row-cols-auto padds gap">
+                <button type="button" class="btn btn-dark">S</button>
+                <button type="button" class="btn btn">M</button>
+                <button type="button" class="btn btn">L</button>
+                <button type="button" class="btn btn">XL</button>
+              </div>
+              <div class="row">
+                <div class="col padd gap">
+                  <button type="button" class="btn btn-dark">Buy Now</button>
+                  <button type="button" class="btn btn-gray">Add to Bag</button>
+                  <button type="button" class="btn btn-primary">🧡</button>
+                </div>
+                <div>
+                  <div class="h8 padd">Free shipping on all continental US orders.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
