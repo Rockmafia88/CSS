@@ -18,65 +18,62 @@
   </head>
   <style>
     .image {
-    width: 229px;
-    height: 305px;
-    left: -18px;
-    top: 0px;
-    opacity: 1;
-    z-index: 2;
-    transform-origin: 50% 50% 0px;
-    border-top-left-radius: 16px ;
-    border-bottom-left-radius: 16px;
-}
-    .card{
+      width: 229px;
+      height: 305px;
+      left: -18px;
+      top: 0px;
+      opacity: 1;
+      z-index: 2;
+      transform-origin: 50% 50% 0px;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+    .card {
       width: 592px;
       height: 305px;
       border-radius: 16px;
-      
     }
     .container {
       padding-top: 24px;
       padding: 48px;
-
     }
 
-    .padd{
+    .padd {
       padding-top: 24px;
     }
-    .padds{
+    .padds {
       padding-top: 24px;
       padding-left: 12px;
     }
 
-    .price{
+    .price {
       color: #a3afc0;
       justify-content: right;
     }
 
     .gap {
-    gap: 8px;
-}
-.h8{
-  font-size: 12px;
-}
+      gap: 8px;
+    }
+    .h8 {
+      font-size: 12px;
+    }
 
-
-.space {
-  padding-left: 24px;
-  padding-right: 24px
-}
+    .space {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   </style>
   <body>
     <div class="container bg-primary-subtle">
       <div class="card">
         <div class="row">
           <div class="d-flex">
-              <img
-                src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg"
-                class="image"
-              />
+            <img
+              src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg"
+              class="image"
+            />
             <div class="space">
-              <div class="d-flex justify-content-between padd ">
+              <div class="d-flex justify-content-between padd">
                 <div class="">
                   <h5>Classic Utility Jacket</h5>
                 </div>
@@ -86,19 +83,66 @@
               </div>
               <div>In stock</div>
               <div class="row g-3 row-cols-auto padds gap">
-                <button type="button" class="btn btn-dark">S</button>
-                <button type="button" class="btn btn">M</button>
-                <button type="button" class="btn btn">L</button>
-                <button type="button" class="btn btn">XL</button>
+                <!--  -->
+                <!-- <button
+                  type="button"
+                  class="btn btn-size"
+                  onclick="changeSize(this)"
+                >
+                  S
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-size"
+                  onclick="changeSize(this)"
+                >
+                  M
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-size"
+                  onclick="changeSize(this)"
+                >
+                  L
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-size"
+                  onclick="changeSize(this)"
+                >
+                  XL
+                </button> -->
+
+                <div id="sizeList"></div>
               </div>
               <div class="row">
                 <div class="col padd gap">
                   <button type="button" class="btn btn-dark">Buy Now</button>
                   <button type="button" class="btn btn-gray">Add to Bag</button>
-                  <button type="button" class="btn btn-primary">🧡</button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    <svg
+                      width="20"
+                      height="20"
+                      color="#d1d5db"
+                      transform=""
+                      transform-origin="50% 50% 0"
+                      style="transform: none"
+                      transformOrigin="50% 50% 0"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
                 <div>
-                  <div class="h8 padd">Free shipping on all continental US orders.</div>
+                  <div class="h8 padd">
+                    Free shipping on all continental US orders.
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,5 +150,8 @@
         </div>
       </div>
     </div>
+    <div id="sizeSelect" style="font-size: 50px"></div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
